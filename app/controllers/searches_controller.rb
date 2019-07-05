@@ -8,7 +8,7 @@ class SearchesController < ApplicationController
     body = JSON.parse(@reps.body)
     @friends = body["friends"]["items"]
 
-    render 
+    render :friends
   end
 
   def foursquare
