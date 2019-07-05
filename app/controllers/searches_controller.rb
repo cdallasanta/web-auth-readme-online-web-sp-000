@@ -1,6 +1,6 @@
 class SearchesController < ApplicationController
   def search
-    
+    @resp = Faraday.get("https://api.foursquare.com/v2/users/USER_ID/friends")
   end
 
   def foursquare
